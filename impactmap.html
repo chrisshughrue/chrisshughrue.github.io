@@ -1,24 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
 
-<input type="radio" name="zing" id="foo" checked/>
-<input type="radio" name="zing" id="bar"/>​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's Date</title>
+    <input type="radio" name="zing" id="foo" checked/>
+    <input type="radio" name="zing" id="bar"/>​
+    <script>
+      if (document.getElementById('foo').checked) {
+          alert('foo');
+      } else {
+          alert('bar');
+      }​
+    </script>
+</head>
 
-<script >
-if (document.getElementById('foo').checked) {
-    alert('foo');
-} else {
-    alert('bar');
-}​
-</script >
+<body>
 
-<form action="/action_page.php">
-  <p>Lockdown impact</p>
-  <input type="radio" id="20%" name="gender" value="20%">
-  <label for="male">20</label><br>
-  <input type="radio" id="30%" name="gender" value="30%">
-  <label for="female">30</label><br>
-  <input type="radio" id="40%" name="gender" value="40%">
-  <label for="other">40</label>
 
-<br>
+  <br>
 
-<iframe src="secondaryImpacts.html"></iframe>
+  <iframe src="secondaryImpacts.html"></iframe>
+
+</body>

@@ -2,14 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<script type="text/javascript">
-    document.getElementsByName("cbParamVirtualX")[Y].onchange = searchOnChangeY;
-    function searchOnChangeY()
-    {
-        var url = document.getElementsByName("cbParamVirtualX")[Y].value;
-        var iframeDiv = document.getElementById("dpIFrame");
-        iframeDiv.innerHTML = '<iframe name="Edit" marginheight="0" frameborder="0" height= "1300" width = "1000" align = "top" src="' + url + '">Sorry, but your browser does not support frames.</iframe>';
-    };
+  <script type="text/javascript">
+  // Option 1
+      document.getElementsByName("cbParamVirtualX")[0].onchange = searchOnChange0;
+      function searchOnChange0()
+      {
+          var url = document.getElementsByName("cbParamVirtualX")[0].value;
+          var iframeDiv = document.getElementById("dpIFrame");
+          iframeDiv.innerHTML = '<iframe name="Edit" marginheight="0" frameborder="0" height= "1300" width = "1000" align = "top" src="' + url + '">Sorry, but your browser does not support frames.</iframe>';
+      };
+
 </script>
 </head>
 </html>

@@ -1,13 +1,22 @@
 
+<input type="radio" name="zing" id="foo" checked/>
+<input type="radio" name="zing" id="bar"/>​
+
+if (document.getElementById('foo').checked) {
+    alert('foo');
+} else {
+    alert('bar');
+}​
+
 
 <form action="/action_page.php">
   <p>Lockdown impact</p>
   <input type="radio" id="20%" name="gender" value="20%">
-  <label for="male">Male</label><br>
+  <label for="male">20</label><br>
   <input type="radio" id="30%" name="gender" value="30%">
-  <label for="female">Female</label><br>
+  <label for="female">30</label><br>
   <input type="radio" id="40%" name="gender" value="40%">
-  <label for="other">Other</label>
+  <label for="other">40</label>
 
 <br>
 

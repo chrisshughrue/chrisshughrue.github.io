@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <script type="text/javascript">
-    window.onload = function() {
-
-        var ex1 = document.getElementById('example1');
-        var ex2 = document.getElementById('example2');
-        var ex3 = document.getElementById('example3');
-
-        ex1.onclick = handler;
-        ex2.onclick = handler;
-        ex3.onclick = handler;
-
-    }
-
-    function handler() {
-        alert('clicked');
-    }
-  </script>
- </head>
- <body>
-  <input type="radio" name="example1" id="example1" value="secondaryImpacts.html" />
-  <label for="example1">Example 1</label>
-  <input type="radio" name="example2" id="example2" value="Example 2" />
-  <label for="example1">Example 2</label>
-  <input type="radio" name="example3" id="example3" value="Example 3" />
-  <label for="example1">Example 3</label>
- </body>
- <iframe id="myFrame" src="myFrame"></iframe>
-</html>
+<script type="text/javascript">
+    document.getElementsByName("cbParamVirtualX")[Y].onchange = searchOnChangeY;
+    function searchOnChangeY()
+    {
+        var url = document.getElementsByName("cbParamVirtualX")[Y].value;
+        var iframeDiv = document.getElementById("dpIFrame");
+        iframeDiv.innerHTML = '<iframe name="Edit" marginheight="0" frameborder="0" height= "1300" width = "1000" align = "top" src="' + url + '">Sorry, but your browser does not support frames.</iframe>';
+    };
+</script>
